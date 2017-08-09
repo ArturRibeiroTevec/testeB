@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form>
+    <ion-item>
+      <ion-label>Descrição</ion-label>
+      <ion-input type="text"  name="description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <span class="label label-ios" >Avaliação</span>
+      <ion-rating
+        padding
+        [numStars]="5"
+        [readOnly]="false"
+        [value]="1"
+        (clicked)="starClicked($event)">
+      </ion-rating>
+    </ion-item>
+    <ion-item>
+      <ion-label>Observações</ion-label>
+      <ion-textarea name="observation" ></ion-textarea>
+    </ion-item>
+     <button ion-button type="submit" (click)="takePicture()" block>salvar</button> 
+  </form>
+</ion-content>

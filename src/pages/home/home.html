@@ -1,0 +1,29 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vistorias</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home card-background-page">
+
+    <ion-card (click)="goToDetails()" >
+      <img src="https://cdnfiles.vivareal.com/wp-cms-images/2017/01/24192540/casa-em-L-314x200.jpg"/>
+      <div class="card-title">Vistoria 1</div>
+      <div class="card-subtitle">5 comodos</div>
+    </ion-card>
+
+    <ion-card (click)="goToDetails()" >
+      <img src="https://1s5mqeqy50h31qzfg30w8mu1-wpengine.netdna-ssl.com/blog/wp-content/uploads/2015/04/painted-trim-2.jpg"/>
+      <div class="card-title">Vistoria 2</div>
+      <div class="card-subtitle">4 comodos</div>
+    </ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+  <button ion-button full (click)="addVistory()" >Adicionar Vistoria</button>
+</ion-footer>

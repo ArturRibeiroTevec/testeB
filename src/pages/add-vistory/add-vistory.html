@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar Vistoria</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form>
+    <ion-item>
+      <ion-label>Titulo da vistoria</ion-label>
+      <ion-input type="text"  name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Locador</ion-label>
+      <ion-input name="owner"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Vistoriador</ion-label>
+      <ion-input name="surveyor"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Locatário</ion-label>
+      <ion-input name="tenant"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Endereço</ion-label>
+      <ion-input name="address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Data</ion-label>
+      <ion-datetime displayFormat="DD-MM-YYYY"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Observações</ion-label>
+      <ion-textarea name="observation" ></ion-textarea>
+    </ion-item>
+    <button ion-button type="submit" (click)="goDetails()" block>Próximo</button>
+  </form>
+</ion-content>
